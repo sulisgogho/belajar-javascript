@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" name="" id="input" placeholder="masukkan nama " />
+    <button id="btnSay">Say Hi</button>
+
+    <div class="pop-up" id="pop-up" style="width: 200px; height: 100px; background-color: blue; margin: 20px"></div>
+
+    <div class="penjumlahan">
+      <input type="text" id="angka1" placeholder="Masukkan Angka" />
+      <input type="text" id="angka2" placeholder="Masukkan Angka" />
+      <button id="jumlah">jumlah</button>
+      <button id="kurang">kurang</button>
+      <button id="kali">kali</button>
+      <button id="bagi">bagi</button>
+    </div>
+    <script>
+      let jumlah = document.getElementById("jumlah");
+      let kurang = document.getElementById("kurang");
+      let kali = document.getElementById("kali");
+      let bagi = document.getElementById("bagi");
+      let angka1 = document.getElementById("angka1");
+      let angka2 = document.getElementById("angka2");
+
+      jumlah.onclick = function () {
+        let total = parseInt(angka1.value) + parseInt(angka2.value);
+        alert("Hasil Penjumlahan = " + total);
+      };
+
+      kurang.onclick = function () {
+        let total = parseInt(angka1.value) - parseInt(angka2.value);
+        alert("Hasil Pengurangan = " + total);
+      };
+
+      kali.onclick = function () {
+        let total = parseInt(angka1.value) * parseInt(angka2.value);
+        alert("Hasil Perkalian = " + total);
+      };
+
+      bagi.onclick = function () {
+        4;
+        let total = parseInt(angka1.value) / parseInt(angka2.value);
+        alert("Hasil Pembagian = " + total);
+      };
+
+      // megakses button say hi di javascript
+      let btnSay = document.getElementById("btnSay");
+      // mengubah label di button dari say hi mejjadi say hello
+      btnSay.textContent = "say hello";
+      // mengubah warna background color
+      btnSay.style.backgroundColor = "#FF0";
+
+      let input = document.getElementById("input");
+      input.style.backgroundColor = "#F0EAAC";
+      input.style.borderRadius = "10px";
+      input.style.border = "1px solid #1E201E";
+
+      btnSay.onclick = function () {
+        btnSay.style.backgroundColor = "#3795BD";
+        btnSay.textContent = "aku terklik";
+        let inputName = document.getElementById("input");
+        let name = inputName.value;
+        alert("Halo" + name);
+
+        let popUp = document.getElementById("pop-up");
+        console.log(popUp);
+        popUp.style.visibility = "hidden";
+      };
+    </script>
+  </body>
+</html>
