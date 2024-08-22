@@ -24,10 +24,11 @@ body {
   padding: 0px;
   margin: 0px;
   height: 80vh;
-  display: none;
   justify-content: center;
   align-items: center;
+  display: none;
 }
+
 .ucapan {
   display: flex;
   width: 800px;

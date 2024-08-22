@@ -1,0 +1,52 @@
+body {
+  margin: 0px;
+}
+.navbar {
+  width: 100;
+  height: 40px;
+  background-color: rgb(6, 156, 118);
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  height: 30px;
+  margin-left: 30px;
+  width: 100px;
+  position: relative;
+}
+
+.btn-link {
+  position: absolute;
+  left: 30px;
+  width: 100px;
+  top: 35px;
+  display: none;
+}
+
+.link {
+  width: 100%;
+  height: 30px;
+}
+
+.content {
+  padding-left: 10px;
+  background-color: aqua;
+  width: 100%;
+  height: 400px;
+  margin-top: 0px;
+}
+
+h1 {
+  margin: 0px;
+  padding-top: 10px;
+}
+
+.coba {
+  margin-top: 50px;
+}
